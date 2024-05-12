@@ -1,0 +1,2 @@
+# конфиг второго экземпляра апача
+OPTIONS=-f conf/second.conf

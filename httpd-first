@@ -1,0 +1,2 @@
+# конфиг первого экземпляра апача
+OPTIONS=-f conf/first.conf
