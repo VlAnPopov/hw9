@@ -19,9 +19,9 @@ cp -f /vagrant/spawn-fcgi /etc/sysconfig/spawn-fcgi
 cp -f /vagrant/spawn-fcgi.service /etc/systemd/system
 # Запускаем сервис
 systemctl start spawn-fcgi
-
-
+# Копируем конфиги для запуска нескольких экземпляров апача
 cp /vagrant/httpd-* /etc/sysconfig
 cp /vagrant/*.conf /etc/httpd/conf/
+# Запускаем апач в нескольких экземплярах
 systemctl start httpd@first
 systemctl start httpd@second
